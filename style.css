@@ -1,0 +1,1080 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--gray-2-color);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 2px;
+    font-size: 11px;
+    cursor: default;
+    text-align: center;
+}
+:root{
+    --primary-color : #11141b;
+    --secondary-color : #1a1e27;
+    --red-color : #a31f1d;
+    --green-color : #26825d;
+    --gray-color : #464d55;
+    --gray-2-color : #8c9099;
+    --orange-color : #ff9f05;
+}
+body{
+    background: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 1px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+::selection{
+    background-color: transparent;
+}
+svg{
+    height: 100%;
+    width: 100%;
+}
+svg path{
+    color:  var(--gray-2-color);
+}
+#blur{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+.green{
+    color: var(--green-color);
+}
+/* ========================================================== */
+                        /* Top Box */
+/* ========================================================== */
+/* Top Box */
+#top-box{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 2.5px 0px;
+    /* padding: 2px; */
+}
+#top-box>#bar span{
+    margin: 0px 5px;
+}
+#top-box>#bar span svg {
+    display: none;
+}
+#top-box>#bar span svg path{
+    color: white !important;
+}#top-box #left{
+    display: flex;
+    gap: 0px 5px;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+#top-box #left div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    gap: 0px 3px;
+    padding: 0px 5px;
+    background-color: var(--secondary-color);
+}
+#top-box #left div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* Forex Heading */
+#top-box #left div:nth-child(1) p{
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--gray-2-color);
+}
+/* Times */
+#top-box #left div:nth-child(5) span p:nth-child(1){
+    font-weight: bold;
+    color: white
+}
+#top-box #left div:nth-child(5) span p:nth-child(2){
+    font-size: 16px;
+    font-weight: bold;
+    color: white
+}
+@media screen and (max-width: 500px){
+    #top-box{
+        padding: 1px 5px;
+    }
+    #top-box #left{
+        gap: 0px 5px;
+    }
+    #top-box #left div{
+        gap: 0px 1px;
+    }
+    #top-box #left div:nth-child(1) p{
+        font-size: 12px;
+    }
+    #top-box #left div:nth-child(5) span p:nth-child(2){
+        font-size: 12px;
+    }
+}/* Main Box */
+#main-box{
+    height: calc(100% - 40px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}/* ========================================================== */
+                        /* line 1 */
+/* ========================================================== */
+#main-1{
+    width: 20%;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: all ease-in-out 0.2s;
+}/* line 1 Boxes */
+#main-1  #box-1{
+    height: 50%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px 0px;
+}
+#main-1  #box-2{
+    height: 15%;
+    overflow: auto;
+}
+#main-1  #box-3{
+    height: 35%;
+    overflow: auto;
+}
+/* ========================================================== */
+                        /* line 2 */
+/* ========================================================== */
+#main-2{
+    width: 40%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* line 2 Boxes */
+#main-2 #box-1{
+    height: 50%;
+    overflow: auto;
+}
+#main-2 #box-2{
+    height: 50%;
+    overflow: auto;
+}
+/* ========================================================== */
+                        /* line 3 */
+/* ========================================================== */
+/* Main 3 */
+#main-3{
+    width: 40%;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}/* line 3 Boxes */
+#main-3 #box-1{
+    height: 50%;
+    width: 100%;
+    overflow: auto;
+}
+#main-3 #box-2{
+    height: 50%;
+    width: 100%;
+    overflow: auto;
+}
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||  LINE 1  |||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ================ */
+/* line 1 box 1*/
+/* ================ */
+/* line 1 box 1 one*/
+#main-1 #box-1>div:nth-child(1){
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+#main-1 #box-1>div:nth-child(1) div{
+    display: flex;
+    gap: 0px 2px;
+}
+#main-1 #box-1>div:nth-child(1) #bars{
+    display: none;
+}
+@media screen and (max-width : 1124px){
+    #main-1 #box-1>div:nth-child(1) div{
+        display: none;
+    }
+    #main-1 #box-1>div:nth-child(1) #bars{
+        display: block;
+    }
+}
+/* line 1 box 1 two*/
+#main-1 #box-1>div:nth-child(2){
+    height: 10%;
+    border: 1px solid var(--gray-color);
+    padding: 5px;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    grid-gap: 5px 0px;
+    position: relative;
+}
+#main-1 #box-1>div:nth-child(2):hover{
+    border-color: var(--gray-2-color);
+}
+#main-1 #box-1>div:nth-child(2)>p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+#main-1 #box-1>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#main-1 #box-1>div:nth-child(2)>div>span{
+    padding: 3px;
+    background-color: blue;
+}
+#main-1 #box-1>div:nth-child(2)>div p{
+    font-size: 10px;
+    font-weight: normal;
+    padding: 5px;
+    text-align: left;
+}
+#main-1 #box-1>div:nth-child(2) #drop{
+    position: absolute;
+    right: 5px;
+}
+/* line 1 box 1 three*/
+#main-1 #box-1>div:nth-child(3){
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+}
+#main-1 #box-1>div:nth-child(3)>div{
+    width: 50%;
+    height: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+#main-1 #box-1>div:nth-child(3)>div:hover{
+    opacity: 1;
+}
+#main-1 #box-1>div:nth-child(3)>div:nth-child(1){
+    border: 1px solid red;
+    background-color: var(--red-color);
+}
+#main-1 #box-1>div:nth-child(3)>div:nth-child(2){
+    border: 1px solid forestgreen;
+    background-color: var(--green-color);
+}
+#main-1 #box-1>div:nth-child(3)>div h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#main-1 #box-1>div:nth-child(3)>div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-1 #box-1>div:nth-child(3)>div:nth-child(1) span{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 30%;
+    width: 30%;
+    background-color: red;
+    color: white;
+}
+#main-1 #box-1>div:nth-child(3)>div:nth-child(2) span{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 30%;
+    width: 30%;
+    background-color: forestgreen;
+    color: white;
+}/* line 1 box 1 four*/
+#main-1 #box-1>div:nth-child(4){
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+/* one */
+#main-1 #box-1>div:nth-child(4)>div:nth-child(1){
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(1)>span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin: 0px 5px;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(1)>input{
+    outline: none;
+    background: transparent;
+    border: 1px solid var(--gray-color);
+    text-align: right;
+    width: 50%;
+    margin: 0px 5px;
+    padding: 2px 5px;
+}
+/* two */
+#main-1 #box-1>div:nth-child(4)>div:nth-child(2){
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(2) span{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    margin: 0px 5px;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(2) span:nth-child(1){
+    justify-content: flex-start;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(2) span:nth-child(2){
+    justify-content: flex-end;
+}
+/* three */
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3){
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3) span{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3)>span:nth-child(1){
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 100%;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3)>span:nth-child(1) button{
+    padding: 5px;
+    width: 80%;
+    height: 50%;
+    background: transparent;
+    border: 1px solid var(--green-color);
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3)>span:nth-child(1) button:hover{
+    background: var(--green-color);
+    color: #ffffff;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3)>span:nth-child(1) label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    height: 50%;
+    padding: 5px;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3)>span:nth-child(2)>table{
+    width: 100%;
+    height: 100%;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3)>span:nth-child(2)>table tr td{
+    margin: 2px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid var(--gray-color);
+    opacity: 0.5;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(3)>span:nth-child(2)>table tr td:hover{
+    opacity: 1;
+}
+/* four */
+#main-1 #box-1>div:nth-child(4)>div:nth-child(4){
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(4)>span:nth-child(1){
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 5px;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(4)>span:nth-child(1) label{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(4)>span:nth-child(2){
+    width: 50%;
+    height: 100%;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(4)>span:nth-child(2)>table{
+    width: 100%;
+    height: 100%;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(4)>span:nth-child(2)>table tr td{
+    margin: 2px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid var(--gray-color);
+    opacity: 0.5;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(4)>span:nth-child(2)>table tr td:hover{
+    opacity: 1;
+}
+/* five */
+#main-1 #box-1>div:nth-child(4)>div:nth-child(5){
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 20%;
+    gap: 0px 2px;
+    padding: 5px 0px;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(5)>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 60%;
+    background-color: var(--green-color);
+    color: #ffffff;
+    border: none;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(5)>button:hover{
+    background-color: var(--green-color);
+    opacity: 0.9;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(5)>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+    height: 100%;
+    border: 1px solid var(--gray-2-color);
+    opacity: 1;
+}
+#main-1 #box-1>div:nth-child(4)>div:nth-child(5)>a:hover{
+    opacity: 0.7;
+}
+/* ================ */
+/* line 1 box 2*/
+/* ================ */
+/* line 1 box 2 one*/
+#main-1 #box-2>div:nth-child(1){
+    width: 100%;
+    height: 80%;
+}
+#main-1 #box-2>div:nth-child(1) table{
+    width: 100%;
+    height: 100%;
+    border-spacing: 0px;
+}
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(1) td{
+    border: 1px solid var(--gray-2-color);
+    font-weight: bold;
+}
+#main-1 #box-2>div:nth-child(1) table tr td{
+    border: 1px solid var(--gray-color);
+    border-radius: 0px;
+    opacity: 0.5;
+    color: white;
+}
+#main-1 #box-2>div:nth-child(1) table tr td:hover{
+    opacity: 1;
+}
+/* line 1 box 2 two*/
+#main-1 #box-2>div:nth-child(2){
+    height: 20%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+#main-1 #box-2>div:nth-child(2) span{
+    width: 100%;
+    padding: 1px;
+    background: linear-gradient(to left,var(--green-color)50% ,var(--red-color)50%);
+}
+/* left side */
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(2) td:nth-child(2){
+    background: linear-gradient(to left,var(--green-color)50% ,transparent 50%);
+}
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(3) td:nth-child(2){
+    background: linear-gradient(to left,var(--green-color)80% ,transparent 20%);
+}
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(4) td:nth-child(1){
+    background: linear-gradient(to left,var(--green-color)100% ,transparent 0%);
+}
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(4) td:nth-child(2){
+    background: linear-gradient(to left,var(--green-color)100% ,transparent 0%);
+}
+/* Right side */
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(2) td:nth-child(3){
+    background: linear-gradient(to right,var(--red-color)50% ,transparent 50%);
+}
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(3) td:nth-child(3){
+    background: linear-gradient(to right,var(--red-color)80% ,transparent 20%);
+}
+#main-1 #box-2>div:nth-child(1) table tr:nth-child(4) td:nth-child(3){
+    background: linear-gradient(to right,var(--red-color)100% ,transparent 0%);
+}
+/* ================ */
+/* line 1 box 3*/
+/* ================ */
+/* line 1 box 3 one*/
+#main-1 #box-3>div{
+    width: 100%;
+    height: 100%;
+    
+}
+#main-1 #box-3>div table{
+    width: 100%;
+    height: 100%;
+    border-spacing: 0px;
+}
+#main-1 #box-3>div table tr td{
+    border: 1px solid var(--gray-color);
+    border-radius: 0px;
+    opacity: 0.5;
+    color: white;
+}
+#main-1 #box-3>div table tr td:hover{
+    opacity: 1;
+}
+#main-1 #box-3>div table tr:nth-child(1) td:nth-child(1)::before{
+    content: '';
+}
+#main-1 #box-3>div table tr td:nth-child(1)::before{
+    content: '●  ';
+    color:  blue;
+}
+/* first row color change */
+#main-1 #box-3>div table tr:nth-child(2) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(2) td{
+    color: var(--red-color);
+}
+#main-1 #box-3>div table tr:nth-child(2) td:nth-child(5){
+    color: var(--green-color);
+}
+/* second row color change */
+#main-1 #box-3>div table tr:nth-child(3) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(3) td{
+    color: var(--red-color);
+}
+#main-1 #box-3>div table tr:nth-child(3) td:nth-child(3){
+    color: var(--green-color);
+}
+/* third row color change */
+#main-1 #box-3>div table tr:nth-child(4) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(4) td{
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(4) td:nth-child(2){
+    color: var(--red-color);
+}
+/* forth row color change */
+#main-1 #box-3>div table tr:nth-child(5) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(5) td{
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(5) td:nth-child(4){
+    color: var(--red-color);
+}
+#main-1 #box-3>div table tr:nth-child(5) td:nth-child(5){
+    color: var(--green-color);
+}
+/* fifth row color change */
+#main-1 #box-3>div table tr:nth-child(6) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(6) td{
+    color: var(--red-color);
+}
+#main-1 #box-3>div table tr:nth-child(6) td:nth-child(4){
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(6) td:nth-child(5){
+    color: var(--green-color);
+}
+/* sixth row color change */
+#main-1 #box-3>div table tr:nth-child(7) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(7) td{
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(7) td:nth-child(4){
+    color: var(--red-color);
+}
+#main-1 #box-3>div table tr:nth-child(7) td:nth-child(5){
+    color: var(--green-color);
+}
+/* seven row color change */
+#main-1 #box-3>div table tr:nth-child(8) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(8) td{
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(8) td:nth-child(2){
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(8) td:nth-child(5){
+    color: var(--green-color);
+}
+/* eight row color change */
+#main-1 #box-3>div table tr:nth-child(9) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(9) td{
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(9) td:nth-child(4){
+    color: var(--red-color);
+}
+#main-1 #box-3>div table tr:nth-child(9) td:nth-child(5){
+    color: var(--green-color);
+}
+/* nine row color change */
+#main-1 #box-3>div table tr:nth-child(10) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(10) td{
+    color: var(--green-color);
+}
+#main-1 #box-3>div table tr:nth-child(10) td:nth-child(2){
+    color: var(--red-color);
+}
+/* ten row color change */
+#main-1 #box-3>div table tr:nth-child(11) td:nth-child(1){
+    color: white;
+}
+#main-1 #box-3>div table tr:nth-child(11) td{
+    color: var(--red-color);
+}
+#main-1 #box-3>div table tr:nth-child(11) td:nth-child(4){
+    color: var(--green-color);
+}/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||  LINE 2  |||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* line 2 Box 1 */
+#main-2 #box-1{
+    position: relative;
+}
+/* one */
+#main-2 #box-1>div:nth-child(1){
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+#main-2 #box-1>div:nth-child(1) div{
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 30%;
+    border-bottom-right-radius: 0px;
+    padding: 0px 5px;
+}
+#main-2 #box-1>div:nth-child(1) div span:nth-child(1){
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#main-2 #box-1>div:nth-child(1) div span:nth-child(1)>span{
+    height: 90% !important;
+}
+#main-2 #box-1>div:nth-child(1) div span:nth-child(2){
+    width: 15px;
+    height: 90% !important;
+}
+/* two */
+#main-2 #box-1>div:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+    height: calc(40px - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+#main-2 #box-1>div:nth-child(2)>span{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#main-2 #box-1>div:nth-child(2)>span button{
+    padding: 2px 5px;
+    margin: 0px 2px;
+    background: none;
+    border: 1px solid var(--gray-color);
+}
+#main-2 #box-1>div:nth-child(2)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* three */
+#main-2 #box-1>div:nth-child(3){
+    height: calc(100% - 40px);
+    background-image: url('img/trade1.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 0px 100px 1px black;
+    animation-name: loopanimi;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}/* line 2 Box 2 */
+#main-2 #box-2{
+    position: relative;
+}
+/* one */
+#main-2 #box-2>div:nth-child(1){
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+#main-2 #box-2>div:nth-child(1) div{
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 30%;
+    border-bottom-right-radius: 0px;
+    padding: 0px 5px;
+}
+#main-2 #box-2>div:nth-child(1) div span:nth-child(1){
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#main-2 #box-2>div:nth-child(1) div span:nth-child(1)>span{
+    height: 90% !important;
+}
+#main-2 #box-2>div:nth-child(1) div span:nth-child(2){
+    width: 15px;
+    height: 90% !important;
+}
+/* two */
+#main-2 #box-2>div:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+    height: calc(40px - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+#main-2 #box-2>div:nth-child(2)>span{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#main-2 #box-2>div:nth-child(2)>span button{
+    padding: 2px 5px;
+    margin: 0px 2px;
+    background: none;
+    border: 1px solid var(--gray-color);
+}
+#main-2 #box-2>div:nth-child(2)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* three */
+#main-2 #box-2>div:nth-child(3){
+    height: calc(100% - 40px);
+    background-image: url('img/trade2.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 0px 100px 1px black;
+    animation-name: loopanimi;
+    animation-duration: 20s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+}/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||  LINE 3  |||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* line 3 Box 1 */
+#main-3 #box-1{
+    position: relative;
+}
+/* one */
+#main-3 #box-1>div:nth-child(1){
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+#main-3 #box-1>div:nth-child(1) div{
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 30%;
+    border-bottom-right-radius: 0px;
+    padding: 0px 5px;
+}
+#main-3 #box-1>div:nth-child(1) div span:nth-child(1){
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#main-3 #box-1>div:nth-child(1) div span:nth-child(1)>span{
+    height: 90% !important;
+}
+#main-3 #box-1>div:nth-child(1) div span:nth-child(2){
+    width: 15px;
+    height: 90% !important;
+}
+/* two */
+#main-3 #box-1>div:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+    height: calc(40px - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+#main-3 #box-1>div:nth-child(2)>span{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#main-3 #box-1>div:nth-child(2)>span button{
+    padding: 2px 5px;
+    margin: 0px 2px;
+    background: none;
+    border: 1px solid var(--gray-color);
+}
+#main-3 #box-1>div:nth-child(2)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* three */
+#main-3 #box-1>div:nth-child(3){
+    height: calc(100% - 40px);
+    background-image: url('img/trade3.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 0px 100px 1px black;
+    animation-name: loopanimi;
+    animation-duration: 20s;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+}/* line 3 Box 2 */
+#main-3 #box-2{
+    position: relative;
+}
+#main-3 #box-2>div:nth-child(1){
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+#main-3 #box-2>div:nth-child(1) div{
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 30%;
+    border-bottom-right-radius: 0px;
+    padding: 0px 5px;
+}
+#main-3 #box-2>div:nth-child(1) div span:nth-child(1){
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#main-3 #box-2>div:nth-child(1) div span:nth-child(1)>span{
+    height: 90% !important;
+}
+#main-3 #box-2>div:nth-child(1) div span:nth-child(2){
+    width: 15px;
+    height: 90% !important;
+}
+/* two */
+#main-3 #box-2>div:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+    height: calc(40px - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+#main-3 #box-2>div:nth-child(2)>span{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#main-3 #box-2>div:nth-child(2)>span button{
+    padding: 2px 5px;
+    margin: 0px 2px;
+    background: none;
+    border: 1px solid var(--gray-color);
+}
+#main-3 #box-2>div:nth-child(2)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* three */
+#main-3 #box-2>div:nth-child(3){
+    height: calc(100% - 40px);
+    background-image: url('img/trade4.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    box-shadow: inset 0px 0px 100px 1px black;
+    animation-name: loopanimi;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}@keyframes loopanimi{
+    50%{
+        background-position: top;
+    }
+    50%{
+        background-position: bottom;
+    }
+}

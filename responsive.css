@@ -1,0 +1,96 @@
+@media screen and (max-width : 980px){
+    #top-box>#bar span svg {
+        display: block;
+    }
+/* line 1 */
+    #main-1{
+        position: fixed;
+        width: 30%;
+        height: calc(100vh - 25px);
+        left: -100%;
+        background-color: var(--secondary-color) !important;
+        overflow-y: auto;
+        display: block;
+        z-index: 99;
+        padding: 0px;
+    }
+/* box 1 */
+    #main-1 #box-1{
+        background-color: var(--primary-color) !important;
+        height: 350px;
+        margin-bottom: 5px;
+    }
+/* box 2 */
+    #main-1  #box-2{
+        background-color: var(--primary-color) !important;
+        height: 250px;
+        margin-bottom: 5px;
+    }
+
+/* box 3 */
+    #main-1  #box-3{
+        background-color: var(--primary-color) !important;
+        height: 350px ;
+    }
+    /* line 2 */
+    #main-2{
+        width: 50%;
+        padding: 0px 0px 0px 2.5px;
+    }
+    /* line 3 */
+    #main-3{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 800px){
+/* main box */
+    #main-box{
+        height: calc(100% - 35px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        overflow-y: scroll;
+        gap: 5px 0px;
+}
+ /* line 1 */
+    #main-1{
+        width: 40%;
+    }
+/* line 2 */
+    #main-2{
+        width: 100%;
+        min-height: 100%;
+        padding: 0px 5px;
+    }
+    #main-2  #box-1{
+        height: 50%;
+    }
+    #main-2  #box-2{
+        height: 50%;
+    }
+/* line 3 */
+    #main-3{
+        width: 100%;
+        min-height: 100%;
+    }
+    #main-3  #box-1{
+        height: 50%;
+    }
+    #main-3  #box-2{
+        height: 50%;
+    }
+}
+@media screen and (max-width : 550px){
+     /* line 1 */
+     #main-1{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 400px){
+    /* line 1 */
+    #main-1{
+       width: 80%;
+   }
+}
